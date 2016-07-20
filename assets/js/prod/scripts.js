@@ -1,1 +1,1 @@
-$(document).ready(function(){Modernizr.mq("only all")?$("html").addClass("mq"):$("html").addClass("no-mq"),$(".hamburger-menu").on("click",function(){$(".bar").toggleClass("animate"),$(".menu").toggleClass("show")})});
+$(document).ready(function(){Modernizr.mq("only all")?$("html").addClass("mq"):$("html").addClass("no-mq"),$(".hamburger-menu").on("click",function(){$(".bar").toggleClass("animate"),$(".menu").toggleClass("show"),$("body").toggleClass("menuOpen")})});

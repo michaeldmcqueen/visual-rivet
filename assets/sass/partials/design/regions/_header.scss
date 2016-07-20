@@ -1,5 +1,4 @@
 header.wrap {
-  background: #fff;
   margin: 0 auto;
   @include clearfix;
   @include breakpoint($tablet, $no-query: ".no-mq") {
@@ -31,10 +30,10 @@ header.wrap {
   }
 }
 
-.main-nav {
-  @include breakpoint($tablet, $no-query: ".no-mq") {
-      @include grid-span(9,4);
-          padding-top: 2.4em;
+// .main-nav {
+//   @include breakpoint($tablet, $no-query: ".no-mq") {
+//       @include grid-span(9,4);
+//           padding-top: 2.4em;
 
-  }
-}
+//   }
+// }

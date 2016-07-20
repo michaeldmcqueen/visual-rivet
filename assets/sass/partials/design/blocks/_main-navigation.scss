@@ -1,3 +1,21 @@
+.nav-wrap {
+  width: 300px;
+  position: fixed;
+  right: -300px;
+  background: #27c093;
+  height: 100%;
+}
+.menuOpen {
+  .nav-wrap {
+    right: 0;
+  }
+  .site-wrap {
+    opacity: 0.7;
+  }
+}
+
+
+
 .main-nav .menu {
   padding: 0;
   margin: 0;
@@ -13,21 +31,18 @@
     margin: 0;
     display: block;
     padding: 0;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      display: inline-block;
-    }
     a {
       font-weight: 500;
       transition: all 0.5s ease;
       padding: .75em 1em;
       display: block;
-      color: #2C2C2C;
+      color: #fff;
       @include breakpoint($tablet, $no-query: '.no-mq') {
         margin-left: 1.5em;
         padding: 0;
       }
       &:hover {
-        color: #333;
+        color: #fff;
       }
       &:active {
         top: 1px;
@@ -43,9 +58,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      max-height: none;
-    }
+    // @include breakpoint($tablet, $no-query: '.no-mq') {
+    //   max-height: none;
+    // }
     &.show {
       max-height: 500px;
     }
@@ -54,9 +69,9 @@
 
 
 .js .hamburger-menu  {
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    display: none;
-  }
+  // @include breakpoint($tablet, $no-query: '.no-mq') {
+  //   display: none;
+  // }
 }
 
 .no-js {
@@ -65,9 +80,9 @@
   }
 }
 
-$bar-width: 35px;
-$bar-height: 3px;
-$bar-spacing: 8px;
+$bar-width: 40px;
+$bar-height: 4px;
+$bar-spacing: 9px;
 
 
 .hamburger-menu {
@@ -90,8 +105,9 @@ $bar-spacing: 8px;
 .bar {
   position: relative;
   transform: translateY($bar-spacing);
-  background: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
   transition: all 0ms 300ms;
+
   
   &.animate {
     background: rgba(0, 0, 0, 0); 
@@ -103,7 +119,7 @@ $bar-spacing: 8px;
   position: absolute;
   left: 0;
   bottom: $bar-spacing;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -112,7 +128,7 @@ $bar-spacing: 8px;
   position: absolute;
   left: 0;
   top: $bar-spacing;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 

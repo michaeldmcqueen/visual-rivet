@@ -15,6 +15,7 @@ $(document).ready(function() {
   $('.hamburger-menu').on('click', function() {
       $('.bar').toggleClass('animate');
       $('.menu').toggleClass('show');
+      $('body').toggleClass('menuOpen');
     });
 
 

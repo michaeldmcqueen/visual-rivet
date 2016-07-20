@@ -5,14 +5,25 @@
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
 	{% include head.html %}
   
-  <body>
+  <body data-vide-bg="assets/video/splash">
   	
   	{% include browserupgrade.html %}
-  	{% include header.html %}
-    
-  	{{ content }}
-  	
-  	{% include footer.html %}
+    <div class="hamburger-menu">
+      <div class="bar"></div> 
+    </div>
+    <div class="nav-wrap">
+      <nav role="navigation" class="main-nav">
+        {% include nav.html nav=site.data.menu %}
+      </nav>
+    </div>
+
+    <div class="site-wrap">
+    	{% include header.html %}
+      
+    	{{ content }}
+    	
+    	{% include footer.html %}
+    </div>
 
   {% include scripts.html %}
   </body>
