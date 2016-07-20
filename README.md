@@ -1,1 +1,1 @@
-# coreveritas.org
+# Rivet Visual
