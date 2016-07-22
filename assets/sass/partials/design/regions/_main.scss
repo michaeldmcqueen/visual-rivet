@@ -22,3 +22,19 @@ section.content-wrapper {
 .video {
   height: 100vh;
 }
+
+.content-wrap {
+  background: #fff;
+  padding: 3em 1em;
+  text-align: center;
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+    h2 {
+      font-size: 3.3em;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}

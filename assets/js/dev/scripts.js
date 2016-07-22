@@ -1,15 +1,31 @@
 $(document).ready(function() {
 
+      $('body').smoothScroll({
+        delegateSelector: 'ul.menu a'
+      });
+
+      $('p.subnav a').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash
+        });
+      });
+  // Cache selectors outside callback for performance. 
+   var $window = $(window),
+       $stickyEl = $('.site-header'),
+       elTop = $stickyEl.offset().top;
+
+   $window.scroll(function() {
+        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+    });
+
+
 	if(Modernizr.mq('only all')) {
 		$('html').addClass('mq');
 	} else {
 		$('html').addClass('no-mq');
 	};
-
-
-  // $( ".menu-btn" ).on('click touchstart', function() {
-  //       $('.menu').toggleClass('show');
-  //   });
 
 
   $('.hamburger-menu').on('click', function() {
@@ -20,3 +36,4 @@ $(document).ready(function() {
 
 
 });
+

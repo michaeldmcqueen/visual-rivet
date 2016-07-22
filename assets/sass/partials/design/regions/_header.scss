@@ -1,31 +1,30 @@
-header.wrap {
+header.site-header {
   margin: 0 auto;
   @include clearfix;
-  position: absolute;
+  position: fixed;
   top: 0;
-  @include breakpoint($tablet, $no-query: ".no-mq") {
-    padding:0 2em;
-  }
-}
-
-.header-top {
-  @include clearfix;
-}
-
-
-.nav-header {
+  width: 100%;
+  transition: all 350ms ease-in-out;
   z-index: 1;
   @include breakpoint($tablet, $no-query: ".no-mq") {
-    float: none;
-    top: 0;
-    padding: 0 5em;
-    transition: top .5s ease-in-out;
-    text-align: center;
+    padding: 0 2em;
+  }
+  .logo {
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      float: left;
+    }
+  }
+  .main-nav {
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      float: right;
+    }
+  }
+  &.sticky {
+    background: rgba(0, 0, 0, 0.65);
+    transition: all 350ms ease-in-out;
+    .main-nav {
+      transition: all 0.35s ease;
+    }
   }
 }
 
-
-.logo {
-  text-align: center;
-
-}
