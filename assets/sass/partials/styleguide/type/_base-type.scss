@@ -9,6 +9,9 @@ body {
 
 p {
   margin: 0 auto $indent-val;
+  font-size: 16px;
+      color: #484848;
+      line-height: 25px;
   // Conditonal Check For Paragraph Styling
   @if $paragraph-vertical-whitespace == false {
     & + p {

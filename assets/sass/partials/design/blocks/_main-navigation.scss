@@ -34,7 +34,7 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  text-align: center;
   @include breakpoint($tablet, $no-query: '.no-mq') {
     padding: 2.5em 0em 0 0;
     text-align: center;

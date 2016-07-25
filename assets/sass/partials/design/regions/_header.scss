@@ -1,13 +1,14 @@
 header.site-header {
   margin: 0 auto;
   @include clearfix;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   transition: all 350ms ease-in-out;
   z-index: 1;
   @include breakpoint($tablet, $no-query: ".no-mq") {
     padding: 0 2em;
+    position: fixed;
   }
   .logo {
     @include breakpoint($tablet, $no-query: ".no-mq") {
@@ -19,11 +20,16 @@ header.site-header {
       float: right;
     }
   }
+
   &.sticky {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(255, 255, 255, 1);
     transition: all 350ms ease-in-out;
     .main-nav {
       transition: all 0.35s ease;
+      a {
+        text-shadow: none !important;
+        color: $link !important;
+      }
     }
   }
 }

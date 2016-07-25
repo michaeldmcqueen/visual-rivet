@@ -11,13 +11,18 @@ $(document).ready(function() {
           scrollTarget: link.hash
         });
       });
+  
   // Cache selectors outside callback for performance. 
-   var $window = $(window),
-       $stickyEl = $('.site-header'),
-       elTop = $stickyEl.offset().top;
+   //caches a jQuery object containing the header element
+    var header = $(".site-header");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-   $window.scroll(function() {
-        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+        if (scroll >= 500) {
+            header.addClass("sticky");
+        } else {
+            header.removeClass("sticky");
+        }
     });
 
 

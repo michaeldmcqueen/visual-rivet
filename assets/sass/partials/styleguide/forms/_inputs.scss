@@ -1,9 +1,10 @@
 input[type="text"], input[type="email"], input[type="name"], input[type="password"], input[type="file"] {
   box-sizing: border-box;
-  padding: .5em 1em;
-  font-size: 100%;
+      padding: 0.9em 1.2em;
+    font-size: 88%;
   font-family: $font-family;
   border: 1px solid #D3D3D3;
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.35);
   border-radius: 3px;
   margin-bottom: .5em;
   &:active, &:focus {

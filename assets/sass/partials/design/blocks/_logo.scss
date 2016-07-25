@@ -1,10 +1,34 @@
 .logo {
   padding: 2em 1em;
+  transition: all 0.5s ease;
   @include breakpoint($tablet, $no-query:'.no-mq') {
       padding: 1.5em 0;
     }
   img {
     display: block;
+    transition: all 0.5s ease;
     margin: 0 auto;
+  }
+}
+
+.light {
+
+}
+.dark img {
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
+.sticky {
+  .light img {
+    transition: all 0.5s ease;
+   opacity: 0;
+   height: 0;
+  }
+  .dark img {
+    opacity: 1;
+    transition: all 0.5s ease;
+    height: auto;
   }
 }
