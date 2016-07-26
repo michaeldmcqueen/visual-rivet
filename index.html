@@ -4,7 +4,8 @@ title: "Rivet Visual"
 about_image_path: "/assets/images/about-img.jpg"
 ---
 <div class="content-wrap">
-  <section class="services" id="services">
+  <div class="services-wrapper" id="services">
+  <section class="services">
     <h2>Our Services</h2>
     <div class="videoContainer">
        <video id="my-video" class="video-js" controls preload="auto" width="1000" height="600"
@@ -22,6 +23,9 @@ about_image_path: "/assets/images/about-img.jpg"
       <P>Phasellus bibendum vel enim sed gravida. Mauris vestibulum est enim, quis elementum sem interdum sit amet. Duis bibendum, libero auctor lobortis porttitor, tortor odio aliquam lacus, lacinia porta purus orci ut felis. Sed varius vel magna et vulputate. Maecenas eleifend in massa vel placerat. Donec vulputate malesuada ipsum id rutrum. Aenean quis placerat erat, ac egestas magna. Curabitur eleifend commodo arcu, non ultricies ligula facilisis eu.</P>
     </div>
 
+    </section>
+  </div>
+<section>
     <video id="my-video" class="video-js" autoplay loop preload="auto" width="1000" height="600"
     poster="/assets/video/RunningMan.jpg" data-setup=''>
       <source src="/assets/video/RunningMan.mp4" type='video/mp4'>
@@ -31,10 +35,10 @@ about_image_path: "/assets/images/about-img.jpg"
         <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
       </p>
     </video>
-
+</section>
  
 
-  </section>
+  
 
   <div class="about-wrapper">
     <section class="about" id="about">
@@ -48,6 +52,12 @@ about_image_path: "/assets/images/about-img.jpg"
     <section class="contact" id="contact">
       <h2>Let's Connect</h2>
       {% include contact-form.html %}
+      <div class="contact-info">
+        <p>Email us at <a href="mailto:team@rivetvisual.com">your@emailaddress.com</a></p>
+
+        <p>712 Whalers Way,<br>
+        Fort Collins, CO 80525</p>  
+      </div>
     </section>
   </div>
 </div>

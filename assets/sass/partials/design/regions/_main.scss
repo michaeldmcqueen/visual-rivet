@@ -38,7 +38,7 @@ section.content-wrapper {
       margin: 0;
       padding: 1.5em 0 1.5em;
       @include breakpoint($tablet, $no-query: '.no-mq') {
-        padding: 3.5em 0 1.5em;
+        padding: 1.5em 0 1.5em;
         font-size: 3.3em;
       }
     }
@@ -52,9 +52,14 @@ section.content-wrapper {
 }
 
 .about-wrapper {
-  background: red;
   @include clearfix;
+  background: url('../images/about-bg.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @include breakpoint($tablet, $no-query: '.no-mq') {
+    margin-top: 117px;
     background: url('../images/about-bg.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -77,5 +82,15 @@ section.content-wrapper {
       color: #484848;
       line-height: 25px;
     }
+  }
+}
+
+.services-wrapper {
+  background: #27c093;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+      padding: 117px 0 0;
+    }
+  h2 {
+    color: #fff;
   }
 }
