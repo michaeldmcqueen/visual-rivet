@@ -74,7 +74,7 @@ section.content-wrapper {
       padding-bottom: 5em;
       h2 {
         text-align: left;
-        padding: 2.5em 0 0.5em;
+        padding: 2.5em 0 0.51em;
       }
     }
     p {
@@ -92,5 +92,15 @@ section.content-wrapper {
     }
   h2 {
     color: #fff;
+  }
+  .intro {
+    color: #fff;
+    font-size: 1.1em;
+    padding-bottom: 3em;
+    p {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.5;
+    }
   }
 }
