@@ -1,5 +1,5 @@
 .contact-form {
-  padding: 2em;
+  padding: 0em 2em 2em;
   @include clearfix;
   @include breakpoint($tablet, $no-query: ".no-mq") {
     width: 50%;
@@ -34,5 +34,19 @@
   padding-bottom: 3em;
   h2 {
     color: #fff;
+  }
+  .contact-info {
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      width: 40%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+    }
+    p, a {
+      color: #fff;
+    }
+    p {
+      font-size: 1.1em;
+    }
   }
 }
