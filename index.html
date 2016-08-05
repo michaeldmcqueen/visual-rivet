@@ -7,16 +7,8 @@ about_image_path: "/assets/images/about-img.jpg"
   <div class="services-wrapper" id="services">
   <section class="services">
     <h2>Our Services</h2>
-    <div class="videoContainer">
-       <video id="my-video" class="video-js" controls preload="auto" width="1000" height="600"
-    poster="/assets/video/pop.jpg" data-setup="{}">
-        <source src="/assets/video/pop.mp4" type='video/mp4'>
-        <source src="/assets/videos/pop.webm" type='video/webm'>
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a web browser that
-          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-      </video>
+    <div class="services-video">
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/177711335' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
   </div>
 
     <div class="editable intro">
@@ -50,7 +42,7 @@ about_image_path: "/assets/images/about-img.jpg"
       <h2>Let's Connect</h2>
       {% include contact-form.html %}
       <div class="contact-info">
-        <p>Email us at <a href="mailto:team@rivetvisual.com">your@emailaddress.com</a></p>
+        <p>Email us at <a href="mailto:info@rivetvisual.com">info@rivetvisual.com</a></p>
 
         <p>712 Whalers Way,<br>
         Fort Collins, CO 80525</p>  

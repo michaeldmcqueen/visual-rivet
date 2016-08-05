@@ -97,11 +97,17 @@ section.content-wrapper {
     color: #fff;
     font-size: 1.1em;
     padding-bottom: 3em;
+        padding-top: 3em;
+
     p {
     font-size: 1.1em;
     color: #fff;
     line-height: 1.5;
     }
+  }
+  .services-video {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
