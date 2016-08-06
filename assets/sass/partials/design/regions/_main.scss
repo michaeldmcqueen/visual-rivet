@@ -53,14 +53,15 @@ section.content-wrapper {
 
 .about-wrapper {
   @include clearfix;
-  background: url('../images/about-bg.jpg') no-repeat center center; 
+  background: url('../images/about.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   @include breakpoint($tablet, $no-query: '.no-mq') {
+    min-height: 705px;
     margin-top: 117px;
-    background: url('../images/about-bg.jpg') no-repeat center center; 
+    background: url('../images/about.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -69,12 +70,13 @@ section.content-wrapper {
   .about-content {
     @include breakpoint($tablet, $no-query: '.no-mq') {
       text-align: left;
-      width: 50%;
+      width: 40%;
       float: right;
       padding-bottom: 5em;
+      padding-right: 2em;
       h2 {
         text-align: left;
-        padding: 2.5em 0 0.51em;
+        padding: 3.5em 0 0.51em;
       }
     }
     p {
