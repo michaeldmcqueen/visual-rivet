@@ -53,19 +53,18 @@ section.content-wrapper {
 
 .about-wrapper {
   @include clearfix;
-  background: url('../images/about.jpg') no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  padding-bottom: 2em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding-bottom: 0;
     min-height: 705px;
-    margin-top: 117px;
     background: url('../images/about.jpg') no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    img {
+      display: none;
+    }
   }
   .about-content {
     @include breakpoint($tablet, $no-query: '.no-mq') {
