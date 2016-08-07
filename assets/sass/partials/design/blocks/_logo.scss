@@ -20,6 +20,24 @@
     float: none;
     max-width: none;
   }
+  .light img {
+   opacity: 0;
+   height: 0;
+  }
+  .dark img {
+    opacity: 1;
+    height: auto;
+  }
+  @include breakpoint($tablet, $no-query:'.no-mq') {
+    .dark img {
+      opacity: 0;
+      height: 0;
+    }
+    .light img {
+   opacity: 1;
+   height: auto;
+  }
+  }
 }
 
 .dark img {
