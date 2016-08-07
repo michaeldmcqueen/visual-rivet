@@ -11,9 +11,17 @@
   }
 }
 
-.light {
-
+.logo {
+  padding: 2em 1em;
+  transition: all 0.5s ease;
+  float: left;
+  max-width: 150px;
+  @include breakpoint($tablet, $no-query:'.no-mq') {
+    float: none;
+    max-width: none;
+  }
 }
+
 .dark img {
   opacity: 0;
   height: 0;
@@ -22,7 +30,7 @@
 
 .sticky {
   .light img {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
    opacity: 0;
    height: 0;
   }
@@ -32,3 +40,6 @@
     height: auto;
   }
 }
+
+
+

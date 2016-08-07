@@ -34,7 +34,9 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  text-align: center;
+  text-align: right;
+  font-size: .8em;
+  padding-top: 1em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
     padding: 2.5em 0em 0 0;
     text-align: center;
@@ -43,17 +45,22 @@
   li {
     list-style: none;
     margin: 0;
-    display: inline-block;
     padding: 0 0;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+       display: inline-block;
+    }
     a {
       font-weight: 500;
       transition: all 0.5s ease;
-      padding: .75em 1em;
+      padding: .5em 1em;
       display: inline-block;
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      padding: .25em 1em;
+      text-shadow: 1px 1px 6px rgba(0,0,0,.75);
+      letter-spacing: 2px;
       @include breakpoint($tablet, $no-query: '.no-mq') {
         padding: .75em 1em;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
       }
       &:hover {
         color: #fff;
