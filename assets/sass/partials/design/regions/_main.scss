@@ -139,12 +139,5 @@ section.content-wrapper {
 }
 
 .running-video {
-  display: none;
-}
-.no-touch .running-video {
-  display: none;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    display: block;
-  }
   padding-top: 3em !important;
 }
