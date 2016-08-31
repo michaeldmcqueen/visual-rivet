@@ -2,7 +2,7 @@
 title: Rivet Visual
 email: michaeldmcqueen@gmail.com
 description: 
-baseurl: "http://rivetvisual.com" # the subpath of your site, e.g. /blog/
+baseurl: "/"# the subpath of your site, e.g. /blog/
 url: "http://rivetvisual.com" # the base hostname & protocol for your site
 timezone: America/Denver
 
