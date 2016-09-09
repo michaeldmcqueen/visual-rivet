@@ -1,5 +1,5 @@
 .logo {
-  padding: 2em 1em;
+  padding: 1em 1em;
   transition: all 0.5s ease;
   @include breakpoint($tablet, $no-query:'.no-mq') {
       padding: 1.5em 0;
@@ -8,11 +8,23 @@
     display: block;
     transition: all 0.5s ease;
     margin: 0 auto;
+    width: 60px;
+    
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      width: 100px;
+      opacity: 0;
+    }
+  }
+}
+
+.sticky {
+  .logo img {
+    opacity: 1;
   }
 }
 
 .logo {
-  padding: 2em 1em;
+  padding: 1em 1em;
   transition: all 0.5s ease;
   float: left;
   max-width: 150px;

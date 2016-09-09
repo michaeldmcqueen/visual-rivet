@@ -24,6 +24,7 @@ header.site-header {
   &.sticky {
     background: rgba(255, 255, 255, 1);
     transition: all 350ms ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     .main-nav {
       transition: all 0.35s ease;
       a {

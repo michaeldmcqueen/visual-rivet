@@ -2,8 +2,10 @@
   padding: 0em 2em 2em;
   @include clearfix;
   @include breakpoint($tablet, $no-query: ".no-mq") {
-    width: 50%;
-    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+
   }
 }
 .webform-component {
@@ -30,17 +32,51 @@
 }
 
 .contact-wrapper {
-  background: #27c093;
-  padding-bottom: 3em;
+  background: $orange;
+  position: relative;
+      padding: 0 0 2em;
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      padding: 0;
+    }
+  section {
+    padding: 8em 1em 5em;
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      padding: 4em 1em 4em;
+    }
+  }
+  .connect1-img {
+    display: none;
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+      position: absolute;
+      left: 5%;
+      top: 20%;
+      width: 15%;
+      display: block;
+      max-width: 220px;
+    }
+  }
+  .connect2-img {
+    display: none;
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 15%;
+        display: block;
+        max-width: 220px;
+    }
+  }
   h2 {
     color: #fff;
   }
   .contact-info {
     @include breakpoint($tablet, $no-query: ".no-mq") {
-      width: 40%;
-      display: inline-block;
-      text-align: left;
-      vertical-align: top;
+        width: 100%;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+        margin-top: -62px;
+        max-width: 625px;
     }
     p, a {
       color: #fff;

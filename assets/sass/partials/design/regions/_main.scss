@@ -58,7 +58,6 @@ section.content-wrapper {
     padding: 0 1em;
     h2 {
       font-size: 2.5em;
-      font-weight: 300;
       text-align: center;
       margin: 0;
       padding: 1.5em 0 1.5em;
@@ -78,57 +77,68 @@ section.content-wrapper {
 
 .about-wrapper {
   @include clearfix;
-  padding-bottom: 2em;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    padding-bottom: 0;
-    min-height: 705px;
-    background: url('../images/about.jpg') no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    img {
-      display: none;
+  section {
+    padding: 4em 1em 4em;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      padding: 11em 1em 5em;
+    }
+  }
+  .about-img {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: left;
+      width: 30%;
     }
   }
   .about-content {
+    text-align: left;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       text-align: left;
-      width: 40%;
+      width: 60%;
       float: right;
       padding-bottom: 5em;
-      padding-right: 2em;
       h2 {
         text-align: left;
-        padding: 3.5em 0 0.51em;
+        padding: 0.5em 0 0.51em;
+        color: $orange;
       }
     }
     p {
-      font-size: 16px;
-      color: #484848;
-      line-height: 25px;
+      font-size: 1.2em;
+      line-height: 1.6;
     }
   }
 }
 
 .services-wrapper {
-  background: #27c093;
+  background: #fff;
+  text-align: left;
+  @include clearfix;
+  padding: 5em 0 5em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
-      padding: 117px 0 0;
+      padding: 14em 0 5em;
     }
+  .services-img {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+          margin-left: 2em;
+
+      float: right;
+      width: 30%;
+    }
+  }
   h2 {
-    color: #fff;
+    color: $orange;
+    padding: 0 !important;
+    text-align: left !important;
   }
   .intro {
     color: #fff;
     font-size: 1.1em;
     padding-bottom: 3em;
-    padding-top: 3em;
+    padding-top: 1em;
     p {
-      color: #fff;
-      line-height: 1.5;
+      line-height: 1.6;
        @include breakpoint($tablet, $no-query: '.no-mq') {
-        font-size: 1.1em;
+        font-size: 1.2em;
       }
     }
   }
@@ -140,4 +150,12 @@ section.content-wrapper {
 
 .running-video {
   padding-top: 3em !important;
+  background: $orange;
+  max-width: 100% !important;
+  img {
+    max-width: 1200px !important;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
