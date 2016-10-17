@@ -1,17 +1,15 @@
 input[type="submit"] {
- /* @include btn(#999, #fff, #6286BD, 3px, $normal);
-  @include grad(#52BAD5, #5276A0, $stop: 100%); */
   font-family: $heading-font-family;
   margin: 10px 0 0 0;
   display: block;
 	background: #595A5A;
 	box-shadow: 0 2px 12px 0 rgba(0,0,0,.35);
-	    border-radius: 3px;
-    border: none;
-    padding: 14px 25px 10px;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px #00000080;
-    font-size: 1em;
-    color: #fff;
-    text-transform: uppercase;
+	border-radius: 3px;
+  border: none;
+  padding: 14px 25px 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #00000080;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
 }

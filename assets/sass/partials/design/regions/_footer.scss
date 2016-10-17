@@ -1,9 +1,16 @@
 .footer-wrapper {
   @include clearfix;
-  background-color: #313131;
+  background-color: $color-three;
   width: 100%;
-  padding: 3em 1em 2em;
+  padding: .5em 1em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
+    position: fixed;
+        padding: .5em 1em;
+    bottom: 0;
+    z-index: 999;
+  } 
+  p {
+    margin: 0;
   }
 }
 footer.wrap {
@@ -17,8 +24,11 @@ footer.wrap {
   }
 }
 
-.social a {
-  width: 35px;
-  display: inline-block;
-  margin: 0 .5em 1em;
+.social {
+  text-align: center;
+  a {
+    width: 75px;
+    display: inline-block;
+    margin: 0 1em 0.2em;
+  }
 }

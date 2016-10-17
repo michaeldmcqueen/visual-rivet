@@ -14,28 +14,31 @@ $(document).ready(function() {
   
   // Cache selectors outside callback for performance. 
    //caches a jQuery object containing the header element
-    var header = $(".site-header");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+    // var header = $(".site-header");
+    // $(window).scroll(function() {
+    //     var scroll = $(window).scrollTop();
 
-        if (scroll >= 500) {
-            header.addClass("sticky");
-        } else {
-            header.removeClass("sticky");
-        }
+    //     if (scroll >= 500) {
+    //         header.addClass("sticky");
+    //     } else {
+    //         header.removeClass("sticky");
+    //     }
+    // });
+
+
+  	if(Modernizr.mq('only all')) {
+  		$('html').addClass('mq');
+  	} else {
+  		$('html').addClass('no-mq');
+  	};
+
+
+  $('.nav-btn').on('click', function() {
+      $('.site-header').toggleClass('show');
+      $('body').toggleClass('menuOpen');
     });
-
-
-	if(Modernizr.mq('only all')) {
-		$('html').addClass('mq');
-	} else {
-		$('html').addClass('no-mq');
-	};
-
-
-  $('.hamburger-menu').on('click', function() {
-      $('.bar').toggleClass('animate');
-      $('.menu').toggleClass('show');
+  $('.site-header li a').on('click', function() {
+      $('.site-header').toggleClass('show');
       $('body').toggleClass('menuOpen');
     });
 

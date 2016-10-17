@@ -1,61 +1,26 @@
 .content-wrapper {
   @include clearfix;
 }
-
 .wrap {
   margin: 0 auto;
 }
 .content-wrap { @include clearfix; }
-
 main {
   background-color: $main-bg;
   @include clearfix;
 }
-
-section.content-wrapper {
-  //padding: 1.5em;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    //padding: 2em;
-  }
-}
-
-.mobile-splash {
-  line-height: 0;
-  margin-top: 115px;
-  img {
-    width: 100%;
-  }
-}
-
-.no-touch {
-  .mobile-splash {
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      display: none;
-    }
-  }
-}
-
-.touch .splash {
-  display: none;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    display: block;
-  }
-}
-.no-touch .video {
-  height: 0;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    height: 100vh;
-  }
-}
-
 .content-wrap {
   background: #fff;
   padding: 0;
-  text-align: center;
   section {
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0em;
+    position: relative;
+    z-index: 998;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      padding: 3em 1em;
+    }
     h2 {
       font-size: 2.5em;
       text-align: center;
@@ -66,96 +31,88 @@ section.content-wrapper {
         font-size: 3.3em;
       }
     }
-    .videoContainer {
-      margin: 0 auto 3em;
+    p {
+      color: #fff;
+      font-size: 1.1em;
+      line-height: 1.45;
+      font-weight: 300;
       @include breakpoint($tablet, $no-query: '.no-mq') {
-        max-width: 80%;
+        font-size: 1.5em;
       }
     }
+    img {
+      display: inline-block;
+      padding: 2em 0 1em;
+    }  
   }
 }
 
-.about-wrapper {
-  @include clearfix;
-  section {
-    padding: 4em 1em 4em;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      padding: 11em 1em 5em;
-    }
-  }
-  .about-img {
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      float: left;
-      width: 30%;
-    }
-  }
-  .about-content {
-    text-align: left;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      text-align: left;
-      width: 60%;
-      float: right;
-      padding-bottom: 5em;
-      h2 {
-        text-align: left;
-        padding: 0.5em 0 0.51em;
-        color: $orange;
-      }
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-  }
+.block-wrapper {
+  display:table;
+  width:100%;
+  position: relative;
 }
-
-.services-wrapper {
-  background: #fff;
-  text-align: left;
-  @include clearfix;
-  padding: 5em 0 5em;
+.section-wrapper {
+  display:table-cell;
+  vertical-align:middle;
+  padding: 3em 2.2em;
   @include breakpoint($tablet, $no-query: '.no-mq') {
-      padding: 14em 0 5em;
-    }
-  .services-img {
+    height: 100vh;
+    padding: 0 3em;
+  }
+  section {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 450px;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-          margin-left: 2em;
-
-      float: right;
-      width: 30%;
+      max-width: 620px;
+      width:80%;
     }
   }
-  h2 {
-    color: $orange;
-    padding: 0 !important;
-    text-align: left !important;
-  }
-  .intro {
-    color: #fff;
-    font-size: 1.1em;
-    padding-bottom: 3em;
-    padding-top: 1em;
-    p {
-      line-height: 1.6;
-       @include breakpoint($tablet, $no-query: '.no-mq') {
-        font-size: 1.2em;
-      }
-    }
-  }
-  .services-video {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
-
-.running-video {
-  padding-top: 3em !important;
-  background: $orange;
-  max-width: 100% !important;
-  img {
-    max-width: 1200px !important;
-    display: block;
-    margin: 0 auto;
+  &:after {
+    content: '';
+    position: absolute;
     width: 100%;
+    height: 100%;
+    background: url(../images/frog-bg.png) center center no-repeat;
+    top: 0;
+    z-index: 0;
+    background-size: 100%;
   }
 }
+.intro-wrapper {
+  padding-top: 65px;
+}
+.about-wrapper {
+  border-top: 8px solid $color-one;
+}
+.services-wrapper {
+  border-top: 8px solid $color-two;
+}
+.client-wrapper {
+  border-top: 8px solid $color-three;
+}
+
+.contact-wrapper {
+  text-align: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  p {
+    font-size: 1.75em;
+    padding-top: .5em;
+  }
+}
+
+
+.gray {
+  background: $color-one;
+}
+.orange {
+  background: $color-two;
+}
+.blue {
+  background: $color-three;
+}
+

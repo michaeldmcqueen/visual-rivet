@@ -1,47 +1,67 @@
 ---
 layout: front
 title: Rivet Visual
-about_video_url: 'https://player.vimeo.com/video/177844502'
-running_image_path: /assets/images/orange-running-man-new.gif
-about_image_path: /assets/images/about-img.png
+intro_image_path: /assets/images/deservemore.png
+about_heading_image_path: /assets/images/about-title.png
+services_heading_image_path: /assets/images/services-title.png
+clients_heading_image_path: /assets/images/clients-title.png
+connect_heading_image_path: /assets/images/letsconnect.png
 ---
 <div class="content-wrap">
-  <div class="services-wrapper" id="services">
 
-  <section class="services editable">
-    <div class="services-img"><img src="/assets/images/services.png"></div>
-    <h2>Our Services</h2>
-    <div class="intro">
-      <p>At Rivet Visual, we transform complex messages into compelling visuals. Our team of analytical thinkers and bold creatives are experts in crafting for the digital age. We will never use istock anything.  Our team will create engaging visuals through illustrations, videos, graphics and animations that will help your message entertain, inform and simply pop.</p>
+  <div class="block-wrapper">
+    <div class="intro-wrapper orange section-wrapper" id="intro">
+      <section class="">
+        <img src="{{ page.intro_image_path }}" />
+      </section>
     </div>
-   
-    </section>
   </div>
-<section class="running-video">
-    <img src="{{page.running_image_path}}" loop=infinite />
-</section>
- 
-  <div class="about-wrapper">
-    <section class="about" id="about">
-      <div class="about-img"><img src="{{ page.about_image_path }}"></div>
-      <div class="editable about-content">
-      <h2>About</h2>
-        <p>We are a fun group of talented artists that deeply care about making a difference.  While working at various establishments – retail, healthcare, and academia, we saw how important programs, services, and ideas received little attention or engagement. Beneficial resources for students, employees and patients went untouched, their main sources of promotion being overlooked posters, buried webpages, and flyers left to skid across parking lots. Our mission at Rivet Visual is to create attention-grabbing content that ensures these programs do not go unnoticed. </p>
-      </div>
-    </section>
-  </div>
-   <div class="contact-wrapper">
-    <div class="connect1-img"><img src="/assets/images/connect-1.png"></div>
-    <section class="contact" id="contact">
-      <h2 class="editable">Let's Connect</h2>
-      {% include contact-form.html %}
-      <div class="contact-info editable">
-        <p>Email us at <a href="mailto:info@rivetvisual.com">info@rivetvisual.com</a></p>
 
-        <p>712 Whalers Way,<br />
-        Fort Collins, CO 80525</p>  
-      </div>
-    </section>
-    <div class="connect2-img"><img src="/assets/images/connect-2.png"></div>
+  <div class="block-wrapper">
+    <div class="about-wrapper blue section-wrapper" id="about">
+      <section class="editable">
+          <img src="{{ page.about_heading_image_path }}" />
+          <p>We are a startup that specializes in creating visual content for health and wellness clients. Why health and wellness? We noticed that despite the importance of these fields, they tend to be aesthetically neglected. Our goal is to use traditional and digital design to creatively translate complex concepts and ideas into engagement boosting material.  We take a handcrafted approach when creating your content: no templates, no stock photos. We promise you’ll receive from-scratch visual content that will never be repurposed for other clients.</p>
+      </section>
+    </div>
   </div>
+
+  <div class="block-wrapper">
+    <div class="services-wrapper gray section-wrapper" id="services">
+      <section class="services editable">
+        <img src="{{ page.services_heading_image_path }}" />
+        <p>Anyone with a product, service, or idea aimed at health and wellness qualifies as our client. We create content that meets the needs of individuals, start-ups, and large corporations alike. Our artists are personable and timely; you’ll never be met with automated calls or required to fill out forms that submit into an abyss. We work with all scales and budgets to ensure everyone has access to quality design. You don’t have to be an expert; whether you have a rough idea or a complete outline, the Rivet Visual team will partner with you to create your vision through a truly customized design experience.</p>
+      </section>
+    </div>
+  </div>
+ 
+
+
+  <div class="block-wrapper">
+    <div class="client-wrapper gray section-wrapper" id="clients" >
+      <section class="editable">
+          <img src="{{ page.clients_heading_image_path }}" />
+          <p>We are a fun group of talented artists that deeply care about making a difference.  While working at various establishments – retail, healthcare, and academia, we saw how important programs, services, and ideas received little attention or engagement. Beneficial resources for students, employees and patients went untouched, their main sources of promotion being overlooked posters, buried webpages, and flyers left to skid across parking lots. Our mission at Rivet Visual is to create attention-grabbing content that ensures these programs do not go unnoticed. </p>
+      </section>
+    </div>
+  </div>
+
+  <div class="block-wrapper">
+    <div class="contact-wrapper orange section-wrapper" id="contact">
+      <section class="editable">
+        <img src="{{ page.connect_heading_image_path }}" />
+          <div class="social">
+            <a href="https://www.facebook.com/rivetvisual/" target="_blank">
+              <img src="/assets/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/RivetVisual" target="_blank">
+              <img src="/assets/images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/rivetvisual/?hl=en" target="_blank"><img src="/assets/images/instagram.png" alt="Instagram"></a>
+          </div>
+          <p><a href="mailto:info@rivetvisual.com">info@rivetvisual.com</a></p>
+      </section>
+    </div>
+  </div>
+
 </div>
