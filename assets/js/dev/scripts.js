@@ -11,19 +11,6 @@ $(document).ready(function() {
           scrollTarget: link.hash
         });
       });
-  
-  // Cache selectors outside callback for performance. 
-   //caches a jQuery object containing the header element
-    // var header = $(".site-header");
-    // $(window).scroll(function() {
-    //     var scroll = $(window).scrollTop();
-
-    //     if (scroll >= 500) {
-    //         header.addClass("sticky");
-    //     } else {
-    //         header.removeClass("sticky");
-    //     }
-    // });
 
 
   	if(Modernizr.mq('only all')) {
@@ -41,6 +28,11 @@ $(document).ready(function() {
       $('.site-header').toggleClass('show');
       $('body').toggleClass('menuOpen');
     });
+    
+  $(".content-wrap").click(function(event) {
+    $('.site-header').removeClass('show');
+    $('body').removeClass('menuOpen');
+  });
 
 
 });
