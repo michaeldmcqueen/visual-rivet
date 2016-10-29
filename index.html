@@ -4,14 +4,16 @@ title: Rivet Visual
 intro_image_path: /assets/images/deservemore.png
 about_heading_image_path: /assets/images/about-title.png
 services_heading_image_path: /assets/images/services-title.png
+services_icons_image_path: /assets/images/icons/servicesIcons.png
 clients_heading_image_path: /assets/images/clients-title.png
+client_icons_image_path: /assets/images/icons/clientIcons.png
 connect_heading_image_path: /assets/images/letsconnect.png
 ---
 <div class="content-wrap">
 
   <div class="block-wrapper">
     <div class="intro-wrapper orange section-wrapper" id="intro">
-      <section class="">
+      <section class="one-col">
         <img src="{{ page.intro_image_path }}" />
       </section>
     </div>
@@ -19,7 +21,7 @@ connect_heading_image_path: /assets/images/letsconnect.png
 
   <div class="block-wrapper">
     <div class="about-wrapper blue section-wrapper" id="about">
-      <section class="editable">
+      <section class="editable one-col">
           <img src="{{ page.about_heading_image_path }}" />
           <p>We are a startup that specializes in creating visual content for health and wellness clients. Why health and wellness? We noticed that despite the importance of these fields, they tend to be aesthetically neglected. Our goal is to use traditional and digital design to creatively translate complex concepts and ideas into engagement boosting material.  We take a handcrafted approach when creating your content: no templates, no stock photos. We promise you’ll receive from-scratch visual content that will never be repurposed for other clients.</p>
       </section>
@@ -28,27 +30,31 @@ connect_heading_image_path: /assets/images/letsconnect.png
 
   <div class="block-wrapper">
     <div class="services-wrapper gray section-wrapper" id="services">
-      <section class="services editable">
-        <img src="{{ page.services_heading_image_path }}" />
-        <p>Our services include video, illustration, graphic design, and motion graphics. We can create posters, explainer videos, logos, and many other creative branding and communication needs. The easiest way to begin the design process is by contacting us below with the type of project you’re interested in. From there we will send you a project outline form to complete, and we will collaborate with you to design a plan. With thorough project updates and our system of revisions and feedback, you’ll never have to worry about the status of your content.</p>
+      <section class="services editable two-col">
+        <div class="section-content-container">
+          <img src="{{ page.services_heading_image_path }}" />
+          <p>Our services include video, illustration, graphic design, and motion graphics. We can create posters, explainer videos, logos, and many other creative branding and communication needs. The easiest way to begin the design process is by contacting us below with the type of project you’re interested in. From there we will send you a project outline form to complete, and we will collaborate with you to design a plan. With thorough project updates and our system of revisions and feedback, you’ll never have to worry about the status of your content.</p>
+        </div>
+        <img src="{{ page.services_icons_image_path }}" class="icons" />
       </section>
     </div>
   </div>
  
-
-
   <div class="block-wrapper">
     <div class="client-wrapper gray section-wrapper" id="clients" >
-      <section class="editable">
+      <section class="editable two-col">
+        <div class="section-content-container">
           <img src="{{ page.clients_heading_image_path }}" />
           <p>Anyone with a product, service, or idea aimed at health and wellness qualifies as our client. We create content that meets the needs of individuals, start-ups, and large corporations alike. Our artists are personable and timely; you’ll never be met with automated calls or required to fill out forms that submit into an abyss. We work with all scales and budgets to ensure everyone has access to quality design. You don’t have to be an expert; whether you have a rough idea or a complete outline, the Rivet Visual team will partner with you to create your vision through a truly customized design experience.</p>
+        </div>
+        <img src="{{ page.client_icons_image_path }}" class="icons" />
       </section>
     </div>
   </div>
 
   <div class="block-wrapper">
     <div class="contact-wrapper orange section-wrapper" id="contact">
-      <section class="editable">
+      <section class="editable one-col">
         <img src="{{ page.connect_heading_image_path }}" />
           <div class="social">
             <a href="https://www.facebook.com/rivetvisual/" target="_blank">

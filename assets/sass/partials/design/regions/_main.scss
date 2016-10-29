@@ -13,7 +13,6 @@ main {
   background: #fff;
   padding: 0;
   section {
-    max-width: 700px;
     margin: 0 auto;
     padding: 0em;
     position: relative;
@@ -73,10 +72,30 @@ main {
   section {
     margin-left:auto;
     margin-right:auto;
-    max-width: 450px;
-    @include breakpoint($tablet, $no-query: '.no-mq') {
-      max-width: 620px;
-      width:80%;
+    &.one-col {
+      max-width: 450px;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        max-width: 620px;
+        width:80%;
+      }
+    }
+    &.two-col {
+      max-width: 450px;
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        max-width: 720px;
+        width:80%;
+      }
+      .section-content-container {
+        width: 75%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img.icons {
+        width: 20%;
+        display: inline-block;
+        vertical-align: middle;
+            margin-left: 4%;
+      }
     }
   }
 }
