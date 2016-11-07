@@ -34,6 +34,6 @@ $(document).ready(function() {
     $('body').removeClass('menuOpen');
   });
 
-
+$(".gallery-teaser a").colorbox({rel:'project-teaser'});
 });
 

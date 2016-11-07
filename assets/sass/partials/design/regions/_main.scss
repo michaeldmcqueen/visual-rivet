@@ -6,7 +6,6 @@
 }
 .content-wrap { @include clearfix; }
 main {
-  background-color: $main-bg;
   @include clearfix;
 }
 .content-wrap {
@@ -33,10 +32,10 @@ main {
     p {
       color: #fff;
       font-size: 1.1em;
-      line-height: 1.45;
+      line-height: 1.35;
       font-weight: 300;
       @include breakpoint($tablet, $no-query: '.no-mq') {
-        font-size: 1.5em;
+        font-size: 1.35em;
       }
     }
     img {
@@ -53,6 +52,42 @@ main {
     top: 0;
     z-index: 0;
     background-size: 100%;
+  }
+}
+
+.content-wrap-subpage {
+  background: #fbaf42;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/frog-bg.png) top center repeat-y;
+    top: 0;
+    z-index: 0;
+    background-size: 100%;
+  }
+  section {
+    padding: 3em;
+    max-width: 900px;
+    background: #fff;
+    margin: 5em auto;
+    img {
+        padding: 0;
+      }
+    .gallery-teaser {
+      display: inline-block;
+      width:30%;
+      padding:0.5em 0;
+      
+    }
+    .gallery-teaser-company {
+      padding-top: 4em;
+      padding-bottom: 2em;
+    }
+  }
+  .portfolio-logo {
+    display: block;
   }
 }
 
@@ -82,19 +117,27 @@ main {
     &.two-col {
       max-width: 450px;
       @include breakpoint($tablet, $no-query: '.no-mq') {
-        max-width: 720px;
+        max-width: 920px;
         width:80%;
       }
       .section-content-container {
-        width: 75%;
+        width: 100%;
         display: inline-block;
         vertical-align: middle;
+        @include breakpoint($tablet, $no-query: '.no-mq') {
+          width: 70%;
+        }
       }
       img.icons {
-        width: 20%;
-        display: inline-block;
-        vertical-align: middle;
-            margin-left: 4%;
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        @include breakpoint($tablet, $no-query: '.no-mq') {
+          width: 139px;
+          margin-left: 9%;
+          display: inline-block;
+          vertical-align: middle;
+        }
       }
     }
   }
