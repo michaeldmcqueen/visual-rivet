@@ -4,7 +4,7 @@ $line-height: 1.65;
 $mobile-font-size: 100;
 $mobile-font-base: 16 * ($mobile-font-size/100);
 $font-size: 100; // percentage value (16 * 112.5% = 18px)
-$font-base: 17 * ($font-size/100); // converts our percentage to a pixel value
+$font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
 $font-family: 'Myriad Pro Condensed', 'Roboto Condensed', Helvetica,Arial,Verdana,sans-serif; // Place your body font here, replace fallbacks as needed
 $heading-font-family: 'Myriad Pro Condensed', 'Roboto Condensed', sans-serif; // Place your heading font here, replace fallbacks as needed
 $third-font: 'Myriad Pro Condensed', 'Roboto Condensed', sans-serif;

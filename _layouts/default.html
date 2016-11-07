@@ -3,29 +3,14 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-	{% include head.html %}
-  
-  <body data-vide-bg="assets/video/splash">
-  	
-  	{% include browserupgrade.html %}
-    <div class="hamburger-menu">
-      <div class="bar"></div> 
-    </div>
-    <div class="nav-wrap">
-      <nav role="navigation" class="main-nav">
-        {% include nav.html nav=site.data.menu %}
-      </nav>
-    </div>
-
+  {% include head.html %}
+  <body>
+    {% include browserupgrade.html %}
     <div class="site-wrap">
-    	{% include header.html %}
-      
-    	{{ content }}
-    	
-    	{% include footer.html %}
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
     </div>
-
   {% include scripts.html %}
   </body>
-  
 </html>

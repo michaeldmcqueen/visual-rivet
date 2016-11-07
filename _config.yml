@@ -24,10 +24,9 @@ kramdown:
 permalink: /blog/:year-:month-:day/:title/
 
 #Collections
-# collections:
-#   conversations:
-#     output: true
-#     permalink: /conversations/:title/
+collections:
+  projects:
+    output: false
 #Defaults
 # defaults:
 #   -

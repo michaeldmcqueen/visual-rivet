@@ -1,16 +1,33 @@
 ---
 layout: default
 ---
-<main class="about subpage">
-  <div class="intro">
+<div class="content-wrap content-wrap-subpage">
+
+<main class="portfolio">
     <h1 class="pagetitle">{{ page.title }}</h1>
-    <h2 class="subtitle">{{ page.subtitle }}</h2>
-  </div>
     <section class="content-wrapper wrap">
-      {{ content }}
-      <div class="quote">
-        <blockquote>{{ page.quote }}</blockquote>
-        <p class="quote-by">{{ page.quote_attribute }}</p>
+    {{ content }}
+    
+    {% assign sorted_projects = (site.projects | sort: 'weight') %} 
+    {% for item in sorted_projects %}
+      <div class="project-teaser">
+        <div class="gallery-teaser-company">
+          <img src="{{ item.logo_image_path }}" alt="" class="portfolio-logo">
+        </div>
+        {% for images in item.gallery %}  
+          <div class="gallery-teaser">
+            <a href="{{ images.large_image_path }}">
+              <img src="{{ images.small_image_path }}" alt="{{images.title}}" title="{{images.title}}">
+            </a>
+          </div>
+        {% endfor %}
+
+        {% for vids in item.videos %}  
+          {{vids.video_embed}}
+        {% endfor %}
       </div>
+     {% endfor %}
+
     </section>
 </main>
+</div>
